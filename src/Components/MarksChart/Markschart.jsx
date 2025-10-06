@@ -15,9 +15,7 @@ const Markschart = ({marksPromise}) => {
             math: studentData.marks.math
         }
 
-        const avg = (student.physics + student.chemistry + student.math) / 3
-        student.avg = avg
-        return student
+        
     })
 
     console.log(marksChartData)
