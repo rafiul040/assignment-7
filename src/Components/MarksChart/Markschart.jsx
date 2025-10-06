@@ -14,7 +14,9 @@ const Markschart = ({marksPromise}) => {
             chemistry: studentData.marks.chemistry,
             math: studentData.marks.math
         }
-
+const avg = (student.physics + student.chemistry + student.math) / 3
+        student.avg = avg
+        return student
         
     })
 
