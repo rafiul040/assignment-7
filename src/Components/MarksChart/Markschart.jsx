@@ -23,7 +23,14 @@ const Markschart = ({marksPromise}) => {
     console.log(marksChartData)
 
     return (
-        
+        <div>
+            <BarChart width={700} height={300} data={marksChartData}>
+                <XAxis dataKey={"name"}></XAxis>
+                    <YAxis></YAxis>
+                    <Bar dataKey={"avg"} fill='yellow'></Bar>
+                    <Bar dataKey={"chemistry"} fill='blue'></Bar>
+            </BarChart>
+        </div>
     );
 };
 
