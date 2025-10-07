@@ -30,9 +30,9 @@ function App() {
       </Suspense>
 
 
-      {/* <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}> */}
+      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
     <Markschart marksPromise={marksPromise}></Markschart>
-      {/* </Suspense> */}
+      </Suspense>
 
 
       <ResultsChat></ResultsChat>
